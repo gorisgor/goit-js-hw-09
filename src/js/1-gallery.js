@@ -85,6 +85,4 @@ import SimpleLightbox from 'simplelightbox';
 // Додатковий імпорт стилів
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-new SimpleLightbox('.some-element a', {
-  /* options */
-});
+new SimpleLightbox('.some-element a', {});
