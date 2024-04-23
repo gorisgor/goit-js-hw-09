@@ -87,4 +87,7 @@ galleryElements.addEventListener("click", handleImageClick);
 function handleImageClick(event) {
   event.preventDefault();
 }
-new SimpleLightbox('.gallery a', { /* options */ });
+new SimpleLightbox('.gallery a', { 
+  captionsData: "alt",
+  captionsDelay: 250,
+ });
