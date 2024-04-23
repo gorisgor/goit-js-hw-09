@@ -87,4 +87,4 @@ galleryElements.addEventListener("click", handleImageClick);
 function handleImageClick(event) {
   event.preventDefault();
 }
-var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+new SimpleLightbox('.gallery a', { /* options */ });
