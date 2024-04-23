@@ -1,3 +1,7 @@
+import SimpleLightbox from 'simplelightbox';
+
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
 const images = [
   {
     preview:
@@ -79,10 +83,15 @@ const markup = images.reduce((html, image) => {
   `);
 }, '');
 galleryElements.insertAdjacentHTML('beforeend', markup);
+galleryElements.addEventListener("click", handleImageClick);
+function handleImageClick(event) {
+  event.preventDefault();
+  if (event.target === event.currentTarget) return;
+  const imageOpenEl = event.target.closest('.gallery-image');
+  const source = imageOpenEl.dataset.source;
+  const currentImage = images.find(image => {
+        return image.original === source;
+    } 
+  );
+}
 
-// Описаний в документації
-import SimpleLightbox from 'simplelightbox';
-// Додатковий імпорт стилів
-import 'simplelightbox/dist/simple-lightbox.min.css';
-
-new SimpleLightbox('.some-element a', {});
