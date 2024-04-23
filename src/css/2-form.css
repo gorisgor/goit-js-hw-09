@@ -1,7 +1,9 @@
-.label {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
+.feedback-form {
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 296px;
+  background: #fff;
   }
 
 .input {
@@ -13,7 +15,7 @@
     line-height: 1.5;
     letter-spacing: 0.04em;
     padding: 8px 16px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
@@ -25,15 +27,25 @@
     border-color: #808080;
   }
 
-  .login-form {
-    border-radius: 8px;
-    padding: 24px;
-    width: 408px;
-    height: 256px;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  .textarea {
+    border: 1px solid #808080;
+    border-radius: 4px;
+    width: 360px;
+    height: 80px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .textarea:hover {
+    border-color: #000;
+  }
+  
+  .textarea:active {
+    border-color: #808080;
   }
     
   .btn {
@@ -43,7 +55,7 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 8px;
     padding: 8px 16px;
-    width: 86px;
+    max-width: 86px;
     height: 40px;
     background-color: #4e75ff;
     font-weight: 500;
@@ -51,7 +63,6 @@
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
-    margin-top: 16px;
   }
   
   .btn:hover {
