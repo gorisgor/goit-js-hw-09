@@ -86,12 +86,5 @@ galleryElements.insertAdjacentHTML('beforeend', markup);
 galleryElements.addEventListener("click", handleImageClick);
 function handleImageClick(event) {
   event.preventDefault();
-  if (event.target === event.currentTarget) return;
-  const imageOpenEl = event.target.closest('.gallery-image');
-  const source = imageOpenEl.dataset.source;
-  const currentImage = images.find(image => {
-        return image.original === source;
-    } 
-  );
 }
-
+var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
