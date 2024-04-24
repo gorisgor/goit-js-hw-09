@@ -38,7 +38,9 @@ const formData = {
     };
     if (currentData.email === "" || currentData.message === "") {
       return alert("Fill please all fields");
-    }
+    } else {
+      console.log(currentData);
+      }
     event.target.reset();
     localStorage.removeItem(feedbackFormState);
   }
