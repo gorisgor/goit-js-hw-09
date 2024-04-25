@@ -90,4 +90,5 @@ function handleImageClick(event) {
 new SimpleLightbox('.gallery a', { 
   captionsData: "alt",
   captionsDelay: 250,
+  overlayOpacity: 0,
  });
